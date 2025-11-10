@@ -8,16 +8,26 @@
 import Foundation
 //import Cocoa
 
+func command_switch(command:String){
+    switch command {
+    case "quit":
+        break
+    default:
+        main()
+    }
+}
+
 func main(){
     print("calculator", terminator:">")
     let command:String! = readLine()
     print("\(command ?? "incorrect command")")
-    switch command {
+    /*switch command {
         case "quit":
             break
         default:
             main()
-    }
+    }*/
+    command_switch(command:command)
 }
 
 let version = "InDev"
