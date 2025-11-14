@@ -20,12 +20,21 @@ func command_switch(command:String, af:String, b:String){
     }
     switch command {
     case "set":
-        //let ai:Int! = Int(a)
         set(a:a, b:b)
     case "add":
         add(a:a, b:b)
-    case "quit":
-        break
+    case "min":
+        min(a:a, b:b)
+    case "tim":
+        tim(a:a, b:b)
+    case "div":
+        div(a:a, b:b)
+    case "pow":
+        powp(a:a, b:b)
+    case "rot":
+        rot(a:a, b:b)
+    //case "quit":
+        //break
     default:
         main()
     }
@@ -58,9 +67,6 @@ let version = "InDev"
 var vars:[String:Int] = ["test":114514]
 var a:Int!
 var b:String!
-//let command:String
-//let a:String
-//let b:String
 print("Welcome to use Command Line Calculator(version \(version)）! \n")
 main()
 
