@@ -8,18 +8,26 @@
 import Foundation
 //import Cocoa
 
-func command_switch(command:String, a:String, b:String){
-    if Int(a) != nil{
-        
+func command_switch(command:String, af:String, b:String){
+    if Int(af) != nil{
+        a = Int(af)
+    }else{
+        if vars[af] != nil{
+            a = vars[af]
+        }else{
+            print("error:02")
+        }
     }
     switch command {
-        case "set":
-            let ai:Int! = Int(a)
-            set(a:ai, b:b)
-        case "quit":
-            break
-        default:
-            main()
+    case "set":
+        //let ai:Int! = Int(a)
+        set(a:a, b:b)
+    case "add":
+        add(a:a, b:b)
+    case "quit":
+        break
+    default:
+        main()
     }
 }
 
@@ -36,9 +44,9 @@ func main(){
     let part = input.components(separatedBy: " ")
     if part.count == 3{
         let command = part[0]
-        let a = part[1]
-        let b = part[2]
-        command_switch(command:command, a:a, b:b)
+        let af = part[1]
+        let bf = part[2]
+        command_switch(command:command, af:af, b:bf)
     }else if part.count == 2{
         let command = part[1]
         if command == "PRT"{
@@ -52,6 +60,9 @@ func main(){
 }
 
 let version = "InDev"
+var vars:[String:Int] = [:]
+var a:Int!
+var b:String!
 //let command:String
 //let a:String
 //let b:String
