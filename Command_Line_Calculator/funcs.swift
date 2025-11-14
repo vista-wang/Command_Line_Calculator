@@ -6,15 +6,17 @@
 //
 
 func prt(prt:String){
-    if vars[b] == nil{
+    if vars[prt] == nil{
         print("error:02")
     }else{
-        print(vars[b]!)
+        print(String(vars[prt]!))
     }
+    main()
 }
 
-func set(a:Int, b:String){
+func set(a:Int!, b:String!){
     vars[b] = a
+    main()
 
 }
 
@@ -26,4 +28,5 @@ func add(a:Int, b:String){
         z = z + a
         vars[b] = z
     }
+    main()
 }
