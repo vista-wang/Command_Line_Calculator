@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/vista/Documents/Command_Line_Calculator/build/Release/Command_Line_Calculator'
-relocations:     []
-...
