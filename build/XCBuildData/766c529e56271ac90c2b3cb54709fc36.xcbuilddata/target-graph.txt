@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'Command_Line_Calculator' in project 'Command_Line_Calculator' (no dependencies)

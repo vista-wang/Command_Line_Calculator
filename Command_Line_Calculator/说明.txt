@@ -1,0 +1,11 @@
+<语句>:=<指令><值>[<变量名>] //输出函数prt仅需要一个为值的输入
+<值>:=<数字>|<变量名>
+<指令>:= set |add | min | tim | div | pow | rot | prt
+set a b => 把变量b的值设为a
+add a b => 把变量b的值加a
+min a b => 把变量b的值减a
+tim a b => 把变量b的值乘a
+div a b => 把变量b的值除以a
+pow a b => 把变量b的值设为变量b的值的a次幂
+rot a b => 把变量b的值设为变量b的值开a次方后的整数
+prt a   => 把变量a的值输出

@@ -19,8 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D557843E2EC5FBD00048415F /* 开发文档.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "开发文档.md"; sourceTree = "<group>"; };
-		D58D18CE2EC1EDFE00D5DDAC /* Command_Line_Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Command_Line_Calculator; path = /Users/vista/Documents/Command_Line_Calculator/build/Debug/Command_Line_Calculator; sourceTree = "<absolute>"; };
+		D56E593E2EC74ED400371C38 /* Command_Line_Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Command_Line_Calculator; path = /Users/vista/Documents/Command_Line_Calculator/build/Debug/Command_Line_Calculator; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -46,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				D58D18D02EC1EDFE00D5DDAC /* Command_Line_Calculator */,
-				D557843E2EC5FBD00048415F /* 开发文档.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +70,7 @@
 			packageProductDependencies = (
 			);
 			productName = Command_Line_Calculator;
-			productReference = D58D18CE2EC1EDFE00D5DDAC /* Command_Line_Calculator */;
+			productReference = D56E593E2EC74ED400371C38 /* Command_Line_Calculator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
