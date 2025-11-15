@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D56E59462EC8B53900371C38 /* LICENSE.txt in Sources */ = {isa = PBXBuildFile; fileRef = D56E59452EC8B53500371C38 /* LICENSE.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D58D18CC2EC1EDFE00D5DDAC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		D56E593E2EC74ED400371C38 /* Command_Line_Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Command_Line_Calculator; path = /Users/vista/Documents/Command_Line_Calculator/build/Debug/Command_Line_Calculator; sourceTree = "<absolute>"; };
+		D56E59452EC8B53500371C38 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +49,7 @@
 		D58D18C52EC1EDFE00D5DDAC = {
 			isa = PBXGroup;
 			children = (
+				D56E59452EC8B53500371C38 /* LICENSE.txt */,
 				D58D18D02EC1EDFE00D5DDAC /* Command_Line_Calculator */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D56E59462EC8B53900371C38 /* LICENSE.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
