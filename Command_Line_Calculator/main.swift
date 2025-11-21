@@ -8,16 +8,19 @@
 import Foundation
 //import Cocoa
 
-func command_switch(command:String, af:String, b:String){
-    if Int(af) != nil{
-        a = Int(af)
+func format_input(_ input:String) -> Int{
+    if Int(input) != nil{
+        return Int(input)
+    }else if vars[input] != nil{
+        return vars[input]
     }else{
-        if vars[af] != nil{
-            a = vars[af]
-        }else{
-            print("error:02")
-        }
+        print("error:02 未定义的变量")
     }
+}
+
+
+func command_switch(command:String, af:String, b:String){
+    guard let a = format_input(af) else { return }
     switch command {
     case "set":
         set(a:a, b:b)
@@ -65,8 +68,8 @@ func main(){
 
 let version = "InDev"
 var vars:[String:Int] = ["test":114514]
-var a:Int!
-var b:String!
+//var a:Int!
+//var b:String!
 print("Welcome to use Command Line Calculator(version \(version)）! \n")
 main()
 
